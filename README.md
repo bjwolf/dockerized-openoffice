@@ -6,6 +6,19 @@
 
 Run OpenOffice in docker container? Awesome :+1: 
 
+From Docker Index
+docker pull bjwolf/ dockerized-openoffice:v1
+or Build yourself
+git clone https://github.com/bjwolf/dockerized-openoffice.git
+docker build --rm -t bjwolf/ dockerized-openoffice:v1 .
+Run
+Interactive mode:
+docker run -i -t -p 6080:6080 bjwolf/ ockerized-openoffice:v1
+Daemon mode:
+docker run -d -t -p 6080:6080 bjwolf/ desockerized-openoffice:v1
+
+
+
 ![](screenshot.png)
 
 ## Usage
